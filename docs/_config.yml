@@ -1,0 +1,50 @@
+title: Propagating Projects and Collaborations 
+email:  #this is also the email contact forms will go
+description: "Predigt: Preach data, design, development, and digital world. Predigt is a platform for tech newbies and gurus to showcase how they are using data, design, development, digital projects, and collaborations to make a positive difference for good. "
+baseurl: "" # the subpath of your site, e.g. /blog
+
+author: Kelechi Precious Nwachukwu
+twitter_username: PluckyPrecious
+github_username: PluckyPrecious
+
+twitter:
+  card: summary
+  username: Predigt
+  url: "https://twitter.com/Predigt1"
+  image: ""
+
+# logo:
+#   path:
+# height: 80px #height in px, defaults to 52px
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jemoji
+  - jekyll-coffeescript
+  - jekyll-paginate
+
+defaults:
+  - scope:
+      path: 'collections/_drafts/**'
+    values:
+      sitemap: false
+
+analytics:
+  google: 
+
+paginate: 10
+paginate_path: "/blog/:num/"
+permalink: pretty
+
+collections_dir: collections
+collections:
+  posts:
+    permalink: /blog/:categories/:slug
+    output: true
+  contributors:
+    output: true
+  pages:
+    output: true
+
+markdown: kramdown
